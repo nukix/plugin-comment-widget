@@ -89,7 +89,7 @@ export class EmojiButton extends LitElement {
         : html`<icon-emoji @click=${this.handleOpenEmojiPicker}></icon-emoji>`}
       <div
         class="form__emoji-panel"
-        style="display: ${this.emojiPickerVisible ? 'block' : 'none'}"
+        style="z-index:1; display: ${this.emojiPickerVisible ? 'block' : 'none'}"
         ${ref(this.emojiPickerWrapperRef)}
       ></div>
     </button>`;
